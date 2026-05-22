@@ -244,6 +244,61 @@ a { text-decoration: none; color: inherit; }
   display: none;
 }
 
+/* Links centrais */
+.lp-nav__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 3vw, 2.6rem);
+  min-width: 0;
+}
+
+.lp-nav__links button {
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(237, 230, 213, 0.72);
+  transition: color 0.2s;
+  white-space: nowrap;
+  padding: 0;
+  line-height: 1;
+}
+
+.lp-nav__links button:hover {
+  color: var(--gold);
+}
+
+.lp-nav__cta,
+.lp-nav__mobile-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background: rgba(201, 168, 76, 0.03);
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 0.66rem 1.25rem;
+  border-radius: 2px;
+  white-space: nowrap;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.lp-nav__cta:hover,
+.lp-nav__mobile-cta:hover {
+  background: var(--gold);
+  color: var(--dark);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px var(--gold-glow);
+}
+
+.lp-nav__mobile-cta {
+  display: none;
+}
+
 /* Hamburger */
 .lp-nav__hamburger {
   display: none;
@@ -338,7 +393,6 @@ a { text-decoration: none; color: inherit; }
     margin-top: 0.35rem;
   }
 }
-
 /* ════════════════════════════════════════════════════════
    HERO
 ════════════════════════════════════════════════════════ */
